@@ -143,16 +143,6 @@ public class SeleniumUtils {
 		
 	}
 	
-	/**
-	 * Finding the frame which contains the given xpath.
-	 * switch -> switch to particular frame where the xpath is present.
-	 * 
-	 * @param webDriver
-	 * @param xpath
-	 * 
-	 * @return Return true if webDriver switched to particular frame where the xpath is present, otherwise return false.
-	 * 
-	 */
 	public Boolean findFrameForGivenXpath( WebDriver webDriver, String xpath ) {
 		
 		return findFrameForGivenXpath(webDriver, xpath, false, null);
@@ -318,33 +308,6 @@ public class SeleniumUtils {
 		}
      }
 	 
-//	private class PartlyDownloadedFile implements FilenameFilter {
-//
-//		@Override
-//		public boolean accept(File file, String name) {
-//
-//			return (name.endsWith(".part") || name.endsWith(".crdownload" /*
-//																		 * for chromium
-//																		 */));
-//		}
-//	}
-
-//	private class DownloadedFile implements FilenameFilter {
-//
-//		String nameContians = null;
-//
-//		public DownloadedFile(String nameContains) {
-//
-//			this.nameContians = nameContains;
-//		}
-//
-////		@Override
-////		public boolean accept(File file, String name) {
-////
-////			return name.contains(nameContians);
-////		}
-//	}
-
 	/**
 	 * Displays summary of the given user
 	 * 
